@@ -179,16 +179,7 @@ public class AreaController {
 		return "service4";
 	}
 	
-	@Scheduled(fixedRate = 10000)
-	@RequestMapping(value="#", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
-	public void saveData() {
-	   final String uri ="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=ded2287ef7a2d51872d4db98e37183d6";
-	   RestTemplate restTemplate = new RestTemplate();
-	   String result = restTemplate.getForObject(uri, String.class);
-	    
-	   mongoTemplate.insert(result, "vikram-protected");   
-		
-	}		    
+		    
 	
 	
 	
