@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.MongoDbFactory;
 
+
+// adding configuration for Cloud Foundry CLI
 @Configuration
 public class CloudConfig extends AbstractCloudConfig {
   @Bean
